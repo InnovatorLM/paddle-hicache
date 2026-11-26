@@ -1,0 +1,17 @@
+﻿GPU 服务器环境与验证结果（2026-11-20）
+========================================
+GPU          : NVIDIA RTX 6000D
+计算能力      : 12.0 (sm_120, Blackwell)
+显存         : 85651 MiB (~84 GB)
+驱动         : 595.84 (CUDA 13.2)
+CUDA runtime : 13.0 (paddle cu130 轮子)
+paddle       : 3.4.0 (paddlepaddle-gpu, cuda=True)
+
+验证结果（全部通过）：
+- test_alignment.py        : PASS（Paddle vs NumPy 逐位一致，调度 9 次/5.56×）
+- test_patch_functional.py : PASS（50 步→9 次前向，容器重建、disable 恢复）
+- calibrate_basis.py       : PASS（三种基形态/interval/Order/σ 标定，与 CPU 结果一致）
+- gpu_smoke.py             : PASS（gpu:0 上外推相对误差 4.76e-05，结果 Place(gpu:0)）
+
+说明：paddle 需用 cu130（CUDA 13.0）轮子——cu126 的 kernel 不含 sm_120，报
+"no kernel image is available"；装 cu130 + PyPI 补 cuda-toolkit 后正常。

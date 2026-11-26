@@ -1,0 +1,12 @@
+﻿  warnings.warn(warning_message)
+reference forward calls: 50
+hicache  forward calls: 9
+computed/predicted    : 9 / 41 (theoretical 5.56×)
+err/RMS all steps     : 4.889%
+err/RMS predicted     : 5.009%
+50 步仅 9 次完整前向                  PASS calls=9
+调度统计 9/41                      PASS 9/41
+输出容器 dict 重建                   PASS 
+disable 后恢复原前向                 PASS 
+--------------------------------------------------------------
+功能测试通过（外推精度见 calibrate_basis.py）

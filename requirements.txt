@@ -1,0 +1,4 @@
+paddlepaddle-gpu>=2.6.0
+ppdiffusers>=0.24.0
+numpy>=1.24
+Pillow>=10.0

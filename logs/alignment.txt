@@ -1,0 +1,22 @@
+﻿  warnings.warn(warning_message)
+缩放递推 g_n == σⁿ·Hn(σx)                                  PASS max rel err=3.42e-15
+C_1(x) == x（一阶与泰勒一致）                                   PASS 
+C_2(x) == x² − 1/(2σ²)（σ=0.5 时 x²−2）                   PASS 
+Order=1 对线性轨迹外推精确（k=1..7）                              PASS max err=0.00e+00
+1 步外推相对误差有界 (1.36e-03/2.06e-03/2.06e-03)               PASS 
+二阶项系数 C_2(1)/2! = -0.500（泰勒 0.5）                       PASS 
+Paddle vs NumPy (Order=1, σ=0.4)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=1, σ=0.5)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=1, σ=0.7)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=2, σ=0.4)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=2, σ=0.5)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=2, σ=0.7)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=3, σ=0.4)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=3, σ=0.5)                       PASS max|Δ|=0.00e+00
+Paddle vs NumPy (Order=3, σ=0.7)                       PASS max|Δ|=0.00e+00
+基函数标量对齐 x=-7.0                                         PASS 
+基函数标量对齐 x=-3.0                                         PASS 
+基函数标量对齐 x=-1.0                                         PASS 
+50 步中完整计算 9 次 → 理论加速 5.56×                             PASS head=CCPPPPPCPPPPPPCP
+----------------------------------------------------------------------
+全部对齐检查通过

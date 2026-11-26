@@ -1,0 +1,8 @@
+W1120 10:04:01.575438 45074 gpu_resources.cc:116] Please NOTE: device: 0, GPU Compute Capability: 12.0, Driver API Version: 13.2, Runtime API Version: 13.0
+paddle 3.4.0 | cuda True
+device count: 1 | current: gpu:0
+[GPU 外推] pred shape (4, 16, 16) | 相对误差 4.76e-05
+  device of result: Place(gpu:0)
+[GPU 调度] 50 步完整前向 9 次 → 理论 5.56×
+[GPU] allocated 0.0 MB
+RESULT: PASS

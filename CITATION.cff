@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: PaddleHiCache - HiCache (scaled-Hermite feature caching) for PaddlePaddle
+message: If you use this code, please cite the HiCache paper and this repository.
+authors:
+  - family-names: Zhang
+    given-names: Linfeng
+    affiliation: Shanghai Jiao Tong University
+  - family-names: Feng
+    given-names: Liang
+    affiliation: Shanghai Jiao Tong University / Fudan University
+license: Apache-2.0
+references:
+  - type: conference-paper
+    title: "HiCache: A Plug-in Scaled-Hermite Upgrade for Taylor-Style Cache-then-Forecast Diffusion Acceleration"
+    authors:
+      - family-names: Feng
+        given-names: Liang
+      - family-names: Zhang
+        given-names: Linfeng
+    conference:
+      name: ICLR
+      year: 2026
+    notes: "Accepted at ICLR 2026; sponsored by CCF-Baidu Open Fund"
